@@ -3,18 +3,7 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 
 // as per https://www.theguardian.com/culture/gallery/2013/may/12/the-10-best-physicists
-let names = [
-  `Niels Bohr`,
-  `Marie Curie`,
-  `Albert Einstein`,
-  `Isaac Newton`,
-  `Galileo Galilei`,
-  `James Clerk Maxwell`,
-  `Michael Faraday`,
-  `Richard Feynman`,
-  `Ernest Rutherford`,
-  `Paul Dirac`
-];
+let names = [`Stephen Hawking`];
 
 let URLS = names.map(name => `https://es.wikipedia.org/wiki/${name.replace(/ /gi, "_")}`);
 let scientists = [];
